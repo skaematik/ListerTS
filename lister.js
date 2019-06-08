@@ -1,12 +1,12 @@
 var Job = /** @class */ (function () {
-    function Job(task) {
-        this.task = task;
+    function Job(tasks) {
+        this.tasks = tasks;
     }
     return Job;
 }());
 function lister(job) {
-    return "Hello, " + job.task.name + " and " + job.task.author;
+    return "Hello, " + job.tasks[0].name + " and " + job.tasks[0].author;
 }
 var task1 = { "name": "Clean the dishes", "author": "annie" };
-var job = new Job(task1);
+var job = new Job([task1]);
 console.log(lister(job));
