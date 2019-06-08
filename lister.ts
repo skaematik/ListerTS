@@ -1,12 +1,18 @@
+class Job {
+    constructor(public task: Task) {
+    }
+}
+
 interface Task {
     name: string;
     author: string;
 }
 
-function lister(task: Task) {
-    return "Hello, " + task.name + " and " + task.author;
+function lister(job: Job) {
+    return "Hello, " + job.task.name + " and " + job.task.author;
 }
 
-let task = {"name": "Clean the dishes", "author": "annie"};
+let task1 = {"name": "Clean the dishes", "author": "annie"};
+let job = new Job(task1);
 
-document.body.innerHTML = lister(task);
+console.log(lister(job));

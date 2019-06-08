@@ -1,5 +1,12 @@
-function lister(task) {
-    return "Hello, " + task.name + " and " + task.author;
+var Job = /** @class */ (function () {
+    function Job(task) {
+        this.task = task;
+    }
+    return Job;
+}());
+function lister(job) {
+    return "Hello, " + job.task.name + " and " + job.task.author;
 }
-var task = { "name": "Clean the dishes", "author": "annie" };
-document.body.innerHTML = lister(task);
+var task1 = { "name": "Clean the dishes", "author": "annie" };
+var job = new Job(task1);
+console.log(lister(job));
