@@ -9,7 +9,7 @@ interface Task {
 }
 
 function lister(job: Job) {
-    return job.tasks.map((task) => "Hello, " + task.name + " and " + task.author);
+    return job.tasks.map((task) => "Hello, " + task.name + " and " + task.author).join("\n");
 }
 
 let task1 = {"name": "Clean the dishes", "author": "annie"};
