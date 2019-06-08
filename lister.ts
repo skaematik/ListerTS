@@ -9,10 +9,11 @@ interface Task {
 }
 
 function lister(job: Job) {
-    return "Hello, " + job.tasks[0].name + " and " + job.tasks[0].author;
+    return job.tasks.map((task) => "Hello, " + task.name + " and " + task.author);
 }
 
 let task1 = {"name": "Clean the dishes", "author": "annie"};
-let job = new Job([task1]);
+let task2 = {"name": "Go to the shops", "author": "annie"};
+let job = new Job([task1, task2]);
 
 console.log(lister(job));
