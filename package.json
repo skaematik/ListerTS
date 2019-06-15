@@ -1,0 +1,22 @@
+{
+  "name": "listerts",
+  "version": "0.0.1",
+  "description": "learning TS",
+  "main": "boxworld.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skaematik/ListerTS.git"
+  },
+  "author": "annie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skaematik/ListerTS/issues"
+  },
+  "homepage": "https://github.com/skaematik/ListerTS#readme",
+  "dependencies": {
+    "mobx": "^5.10.1"
+  }
+}
