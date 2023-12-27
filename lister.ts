@@ -8,7 +8,7 @@ interface Task {
     author: string;
 }
 
-function lister(job: Job) {
+function lister(job: Job): string {
     return job.tasks.map((task) => "Hello, " + task.name + " and " + task.author).join("\n");
 }
 
